@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pepe's Bookstore</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="The homepage for My Bookstore" />
+
+    <!-- Import font-awesome icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- order of CSS files is important (this is the "Cascade" part of CSS) -->
+
+    <!-- global.css contains resets, custom properties, and utility classes -->
+    <link rel="stylesheet" href="css/global.css" />
+
+    <!-- start from the top-level component and work your way down -->
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/app-header.css" />
+    <link rel="stylesheet" href="css/header-dropdown.css" />
+    <link rel="stylesheet" href="css/app-footer.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+
+  <body>
+    <main>
+      <header class="container">
+        <section id="bookstore-logo-section">
+          <a id="header-logo-link" href="index.html">
+            <img
+              src="images/site/pepe-store-logo.gif"
+              alt="Pepe's Bookstore Logo"
+            />
+          </a>
+          <a id="header-logo-text-link" href="index.html">
+            <h1 id="header-text-logo">Pepe's Bookstore</h1>
+          </a>
+        </section>
+        <section id="search-bar-section">
+          <form action="category.html">
+            <input type="text" placeholder="Find a book"/>
+            <input type="submit" value="">
+          </form>
+        </section>
+        <section id="header-category-section">
+          <div id="header-dropdown">
+            <button class="button categories-button">
+              <p>Categories</p>
+              <i id="dropdown-icon" class="fa-solid fa-angle-down"></i>
+            </button>
+            <ul>
+              <li><a href="category.html?category=Adventure">Adventure</a></li>
+              <li><a href="category.html?category=Science Fiction">Science Fiction</a></li>
+              <li><a href="category.html?category=Crime">Crime</a></li>
+              <li><a href="category.html?category=Horror">Horror</a></li>
+              <li><a href="category.html?category=Romance">Romance</a></li>
+              <li><a href="category.html?category=Fantasy">Fantasy</a></li>
+              <li><a href="category.html?category=Drama">Drama</a></li>
+              <li><a href="category.html?category=Mystery">Mystery</a></li>
+            </ul>
+          </div>
+        </section>
+        <section id="header-cart-section">
+          <a class="button cart-link">
+            <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+            <p>10</p>
+          </a>
+        </section>
+        <a class="button sign-in-link">Login</a>
+      </header>
+      <div id="main-content">
+        <section id="hero-section">
+          <img id="hero-img" src="images/site/hero-img.png" alt="hero-img">
+          <a id="call-to-action-btn" class="button" href="category.html?category=Hot">SHOP FOR BOOKS</a>
+        </section>
+      </div>
+      <footer class="container">
+        <section id="links">
+          <a href="index.html">About</a>
+          <span>|</span>
+          <a href="index.html">Contact</a>
+          <span>|</span>
+          <a href="index.html">Directions</a>
+        </section>
+        <section id="social-media-icons">
+          <a class="button"><i class="fa-brands fa-facebook"></i></a>
+          <a class="button"><i class="fa-brands fa-instagram"></i></a>
+          <a class="button"><i class="fa-brands fa-twitter"></i></a>
+        </section>
+        <span>Copyright © 2022 Pepe's Bookstore</span>
+      </footer>
+    </main>
+  </body>
+</html>

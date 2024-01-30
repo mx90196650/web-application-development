@@ -1,0 +1,98 @@
+header {
+  background: var(--background-secondary-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header #bookstore-logo-section {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+header a#header-logo-link {
+  width: 4rem;
+}
+
+header a#header-logo-text-link {
+  text-decoration: none;
+}
+
+header h1#header-text-logo {
+  font-family: var(--default-font-family);
+  text-align: left;
+  padding: 0.5rem;
+  color: var(--default-text-color);
+}
+
+
+header #search-bar-section {
+  padding: 0 1rem;
+}
+
+header #search-bar-section form {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  width: 20rem;
+}
+
+header input[type=text] {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border: 0;
+  height: 100%;
+  padding: 1rem;
+  width: 100%;
+}
+
+header input[type=submit] {
+  opacity: 60%;
+  background: url("../images/site/magnifying-glass-solid.svg") no-repeat center;
+  background-origin: content-box;
+  background-color: white;
+  padding: 3px;
+  height: 100%;
+  max-height: 100%;
+  border: 0;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+header input[type=submit]:hover {
+  filter: brightness(90%);
+}
+
+header input[type=submit]:active {
+  filter: brightness(85%);
+}
+
+header a.button.cart-link{
+  display: flex;
+  align-items: center;
+  background-color: var(--background-secondary-color);
+  justify-content:space-between;
+}
+
+header a.button.cart-link:hover {
+  filter: brightness(95%);
+}
+
+header i#cart-icon {
+  font-size: x-large;
+  padding-right: 0.5rem;
+}
+
+header a.button.sign-in-link {
+  font-size: large;
+  background-color: var(--background-secondary-color);
+}
+
+header a.button.sign-in-link:hover {
+  filter: brightness(95%);
+}
+

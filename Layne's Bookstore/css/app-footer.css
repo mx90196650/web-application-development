@@ -1,0 +1,52 @@
+footer {
+  background: var(--background-tertiary-color);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer section {
+  display: flex;
+}
+
+footer > :first-child, footer > :last-child {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+footer > * {
+  padding: 0 1rem;
+}
+
+footer section#links {
+  display: flex;
+  align-items: center;
+}
+
+footer section#links a {
+  padding: 0.5rem 0.1rem;
+}
+
+footer section#links a:hover, a:active {
+  color: var(--quaternary-color);
+}
+
+footer section#links span {
+  padding: 0 0.5rem;
+}
+
+footer section#social-media-icons i {
+  font-size: 1.7em
+}
+
+footer section#social-media-icons .button:hover {
+  background-color: var(--background-tertiary-color);
+  filter: brightness(95%);
+}
+
+footer > span {
+  display: inline-block;
+  text-align: end;
+}
+
